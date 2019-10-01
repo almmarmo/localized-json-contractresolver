@@ -14,7 +14,10 @@ namespace ResourceExample
                 Nome = "teste",
                 Data = DateTime.Now
             };
-            var settings = new JsonSerializerSettings { ContractResolver = new LocalizedContractResolver() };
+
+            ResourceProvider provider = new ResourceProvider("ResourceExample.Resources.Domain", typeof(Resources.Domain));
+
+            var settings = new JsonSerializerSettings { ContractResolver = new LocalizedContractResolver(provider, "en-us") };
             var json = JsonConvert.SerializeObject(entity, settings);
 
             Console.WriteLine(json);
