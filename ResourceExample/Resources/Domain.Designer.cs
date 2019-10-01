@@ -63,18 +63,18 @@ namespace ResourceExample.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Data.
         /// </summary>
-        internal static string Data {
+        internal static string DomainExample_Data {
             get {
-                return ResourceManager.GetString("Data", resourceCulture);
+                return ResourceManager.GetString("DomainExample_Data", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Nome.
         /// </summary>
-        internal static string Nome {
+        internal static string DomainExample_Nome {
             get {
-                return ResourceManager.GetString("Nome", resourceCulture);
+                return ResourceManager.GetString("DomainExample_Nome", resourceCulture);
             }
         }
     }
