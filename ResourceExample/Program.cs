@@ -20,10 +20,14 @@ namespace ResourceExample
 
             ResourceProvider provider = new ResourceProvider("ResourceExample.Resources.Domain", typeof(Resources.Domain));
 
-            var settings = new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore,  ContractResolver = new ResourceContractResolver(provider, "pt") };
+            var settings = new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore,  ContractResolver = new ResourceContractResolver(provider, "en") };
             var json = JsonConvert.SerializeObject(entity, settings);
 
+            var settingsBr = new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore, ContractResolver = new ResourceContractResolver(provider, "pt-br") };
+            var jsonBr = JsonConvert.SerializeObject(entity, settingsBr);
+
             Console.WriteLine(json);
+            Console.WriteLine(jsonBr);
         }
     }
 }

@@ -120,8 +120,14 @@
   <data name="Cast" xml:space="preserve">
     <value>cast</value>
   </data>
+  <data name="Code" xml:space="preserve">
+    <value>code</value>
+  </data>
   <data name="Date" xml:space="preserve">
     <value>date</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>id</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>name</value>
