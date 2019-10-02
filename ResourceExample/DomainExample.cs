@@ -7,8 +7,16 @@ namespace ResourceExample
 {
     public class DomainExample
     {
-        public string Nome { get; set; }
+        [DataMember(Name="nome", EmitDefaultValue = false)]
+        public string Name { get; set; }
 
-        public DateTime Data { get; set; }
+        public DateTime Date { get; set; }
+
+        public List<Person> Cast { get; set; }
+    }
+
+    public class Person
+    {
+        public string Name { get; set; }
     }
 }

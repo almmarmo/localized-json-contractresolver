@@ -22,7 +22,7 @@ namespace ResourceExample.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Domain {
+    public class Domain {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace ResourceExample.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ResourceExample.Resources.Domain", typeof(Domain).Assembly);
@@ -51,7 +51,7 @@ namespace ResourceExample.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,20 +61,29 @@ namespace ResourceExample.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data.
+        ///   Looks up a localized string similar to cast.
         /// </summary>
-        internal static string DomainExample_Data {
+        public static string Cast {
             get {
-                return ResourceManager.GetString("DomainExample_Data", resourceCulture);
+                return ResourceManager.GetString("Cast", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nome.
+        ///   Looks up a localized string similar to date.
         /// </summary>
-        internal static string DomainExample_Nome {
+        public static string Date {
             get {
-                return ResourceManager.GetString("DomainExample_Nome", resourceCulture);
+                return ResourceManager.GetString("Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to name.
+        /// </summary>
+        public static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
             }
         }
     }

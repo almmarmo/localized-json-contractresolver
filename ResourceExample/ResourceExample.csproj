@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NewtonSoft.Globalization\NewtonSoft.Globalization.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Domain.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -28,8 +32,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Domain.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Domain.pt-br.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Domain.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Domain.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>

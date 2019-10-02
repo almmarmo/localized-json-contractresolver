@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Resources;
 using System.Text;
 
-namespace ResourceExample
+namespace NewtonSoft.Globalization
 {
     public class ResourceProvider : IResourceProvider
     {
